@@ -1,4 +1,4 @@
-package practice;
+package jDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

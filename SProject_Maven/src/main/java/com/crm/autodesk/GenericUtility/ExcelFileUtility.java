@@ -17,10 +17,8 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ExcelFileUtility 
 {
 	/**
-	 * this method will read data from Excel sheet with row number and cell number
-	 * @param sheetName 
-	 * @param rowNum 
-	 * @param cellNum 
+	 * This method will read data from Excel sheet with row number and cell number
+	 * Data Formatter
 	 * @return 
 	 * @throws Throwable 
 	 */
@@ -38,6 +36,25 @@ public class ExcelFileUtility
 		return value;
 	}
 	
+	/*
+	public String getExcelData(String sheetName, int rowNum, int cellNum) throws Throwable
+	{
+		FileInputStream fis = new FileInputStream(IPathConstants.ExcelFilePath);
+		Workbook workbook = WorkbookFactory.create(fis);
+		Sheet sheet = workbook.getSheet(sheetName);
+		Row row = sheet.getRow(rowNum);
+		Cell cell = row.getCell(cellNum);
+		String value = cell.getStringCellValue();
+		
+		return value;
+	}*/
+	
+	/**
+	 * Data Provider to read multiple data stored in a 2 dimensional object arrayyhn 
+	 * @param sheetName
+	 * @return
+	 * @throws Throwable
+	 */
 	public Object[][] getExcelData(String sheetName) throws Throwable
 	{
 		FileInputStream fis = new FileInputStream(IPathConstants.ExcelFilePath);

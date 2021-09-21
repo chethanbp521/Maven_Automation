@@ -1,4 +1,4 @@
-package practice;
+package jDBC;
 
 import java.util.concurrent.TimeUnit;
 
