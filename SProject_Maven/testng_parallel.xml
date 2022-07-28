@@ -18,4 +18,10 @@
     </classes>
   </test> <!-- Test -->
   
+  <test thread-count="5" parallel="tests" name="Test3">
+    <classes>
+      <class name="com.crm.autodesk.ContactsTest.TC_28_CreateContactDoNotCallTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

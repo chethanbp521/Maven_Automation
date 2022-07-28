@@ -50,7 +50,7 @@ public class ExcelFileUtility
 	}*/
 	
 	/**
-	 * Data Provider to read multiple data stored in a 2 dimensional object arrayyhn 
+	 * Data Provider to read multiple data stored in a 2 dimensional object array 
 	 * @param sheetName
 	 * @return
 	 * @throws Throwable

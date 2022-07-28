@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.autodesk.ContactsTest.TC_28_CreateContactDoNotCallTest">
+      <class name="jDBC.Sample_MavenParamenterTest">
         <methods>
-          <include name="loginToApp"/>
-          <include name="openConnection"/>
-          <include name="logoutFromApp"/>
-          <include name="closeBrowser"/>
-          <include name="closeConnection"/>
-          <include name="createContactDoNotCall"/>
-          <include name="launchBrowser"/>
+          <include name="sampleTest"/>
         </methods>
-      </class> <!-- com.crm.autodesk.ContactsTest.TC_28_CreateContactDoNotCallTest -->
+      </class> <!-- jDBC.Sample_MavenParamenterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -21,7 +21,6 @@ public class Amazon {
 		driver.findElement(By.id("nav-search-submit-button")).click();
 		
 		driver.findElement(By.linkText("Redmi")).click();
-		//driver.findElement(By.xpath("//i[@class='a-icon a-icon-checkbox'][2]")).click();
 		Thread.sleep(5000);
 		WebElement ele = driver.findElement(By.xpath("//span[@class='a-price-whole']"));
 		String price = ele.getText().replace(",", "");

@@ -4,15 +4,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import com.crm.autodesk.GenericUtility.PropertyFileUtility;
+
 public class Sample_MavenParamenterTest {
 
 	@Test
-	public void sampleTest()
+	public void sampleTest() throws Throwable
 	{
+		PropertyFileUtility pfu = new PropertyFileUtility();
 		System.out.println("EXECUTE TEST");
-		String Url = System.getProperty("url");
-		String UserName = System.getProperty("username");
-		String Password = System.getProperty("password");
+		String Url = pfu.getPropertyFileData("url");
+		String UserName = pfu.getPropertyFileData("username");
+		String Password = pfu.getPropertyFileData("password");
 		
 		System.out.println(Url);
 		System.out.println(UserName);
